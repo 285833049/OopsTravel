@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="test" extends="struts-default">
+<action name="ShowAttraction" class="myaction.ShowAttractionAction">
+<result name="success">/spots.jsp</result>
+</action>
+<action name="AttractionDetailInfo" class="myaction.AttractionDetailInfoAction">
+<result name="success">/spot.jsp</result>
+</action>
+<action name="NewsInfo" class="myaction.NewsInfoAction">
+<result name="success">/news.jsp</result>
+</action>
+<action name="NewsDetail" class="myaction.NewsDetailAction">
+<result name="success">/newsdetail.jsp</result>
+</action>
+<action name="SearchAttraction" class="myaction.SearchAttractionAction">
+<result name="success">/searchrel.jsp</result>
+<result name="error">/error.jsp</result> 
+</action>
+<action name="NewsForAdmin" class="myaction.NewsForAdminAction">
+<result name="success">/managerindex.jsp</result>
+</action>
+<action name="NewsDetailForAdmin" class="myaction.NewsDetailForAdminAction">
+<result name="success">/newsdetailmanage.jsp</result>
+</action>
+<action name="DeleteNews" class="myaction.DeleteNewsAction">
+<result name="success" type="redirectAction">
+<param name="actionName">NewsForAdmin</param>
+</result>
+</action>
+<action name="AddNews" class="myaction.AddNewsAction">
+<param name="savePath">/images</param>
+<result name="success" type="redirectAction">
+<param name="actionName">NewsForAdmin</param>
+</result>
+<result name="input" >/newsadd.jsp</result>
+</action>
+<action name="Register" class="myaction.RegisterAction">
+<result name="success">/login.jsp</result>
+<result name="input">/zhuce.jsp</result>
+</action>
+<action name="rand" class="myaction.RandomPictureAction">
+<result type="stream"> 
+<param name="contentType">image/jpeg</param>  
+<param name="inputName">inputStream</param>  
+</result> 
+</action>
+ <action name="Login" class="myaction.LoginAction">
+		<result name="success">/index.jsp</result>
+		<result name="input">/zhuce.jsp</result>
+		<result name="error">/login.jsp</result>
+		<result name="login" type="redirectAction">
+		
+		<param name="actionName">NewsForAdmin</param>
+		</result>
+		<result name="none">/error.jsp</result>
+		</action>      
+</package>
+</struts>    

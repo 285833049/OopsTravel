@@ -1,0 +1,17 @@
+ul,li,p,dl,dt,dd,a,img{padding:0px;margin:0px}
+<!--body{font:normal 12px/24px 'Î¢ÈíÑÅºÚ';color:#ccc;}-->
+ul,li{list-style:none; font-family:"Î¢ÈíÑÅºÚ"}
+img{border:none}
+/*a:link,a:visited,a:hover{color:#ccc}*/
+<!--.box1{width:200px;margin:60px auto;}-->
+/****/
+.kwicks{width:200px;position:relative}
+.kwicks li{width:180px;height:180px;overflow:hidden;margin-right:9px;float:left}
+.kwicks li.last{margin-right:0px}
+.kwicks li img{width:170px;height:170px;border:5px solid #c6c6c6;float:left}
+.kwicks li .extension{height:180px; no-repeat right top #3c3c3c;overflow:hidden}
+.kwicks li dl{padding:10px 0px 0px 10px;width:180px;height:160px;overflow:hidden;margin-left:0px; font-family:"Î¢ÈíÑÅºÚ"}
+.kwicks li dd{color:#090f65; font-family:"Î¢ÈíÑÅºÚ"; font-size:12px}
+.kwicks li dt{color:#090f65; font-family:"Î¢ÈíÑÅºÚ"}
+.kwicks li dt{font-size:14px;font-weight:bold; font-family:"Î¢ÈíÑÅºÚ"}
+
